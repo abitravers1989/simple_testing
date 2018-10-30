@@ -6,12 +6,12 @@ describe('BMI', () => {
         //Arrange 
         const height = 1.9;
         const weight = 90;
-        const expectedResult = 90;
+        const expectedResult = 24.9;
 
         //Act
         const calBMI = bmi.calculateBMI(height, weight)
 
         //Assert
-        assert.Equal(calBMI, expectedResult)
+        assert.equal(calBMI, expectedResult)
     })
 })
