@@ -23,7 +23,10 @@ describe("userAccount", () => {
         const email2 = "testtwo@test.com"
 
         //Act
-        const userAccount = userAccount(email1, email2)
+        const userAccount = userAccount(email1);
+        userAccount.getData();
+        const userAccount2 = userAccount(email2);
+        userAccount2.getData();
 
         //Assert
         assert(spy.calledWith(email1));
