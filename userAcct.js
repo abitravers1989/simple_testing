@@ -1,5 +1,5 @@
 module.exports = {
-    UserAccountsService: function (email) {
+    userAccountsService: function (email) {
         this.email = email;
         this.currentUser = { name: "Test", email: this.email };
         this.accountDetails = { balance: "£44.99", user: this.currentUser }
@@ -12,5 +12,3 @@ module.exports = {
 
 
 
-const user = new UserAccountsService("test@test.com");
-console.log(user.getData())
