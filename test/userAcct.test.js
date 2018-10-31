@@ -17,13 +17,15 @@ describe("userAccountsService", () => {
     })
     it('When userAccount is given two emails getData is called twice ', () => {
         //Arrange 
-        const spy = sandbox.spy(getData)
         const userAccount = require('../userAcct')
+        const spy = sandbox.spy(userAccount.getData)
+
         const email1 = "test@test.com"
         const email2 = "testtwo@test.com"
 
         //Act
-        userAccount.userAccountsService("test@test.com");
+        //console.log(userAccount)
+        const user = userAccount.userAccountsService("test@test.com");
         console.log(userAccount.getData())
         // userAccount.getData();
         // const userAccount2 = userAccount.userAccountsService(email2);
