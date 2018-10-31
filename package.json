@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0",
+    "mocha": "^5.2.0"
+  },
+  "devDependencies": {
     "sinon": "^7.1.0"
   }
 }
