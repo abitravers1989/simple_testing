@@ -30,3 +30,21 @@ function higherOrderFunction(x, callback) {
 }
 
 higherOrderFunction(10, add)
+
+//Promises 
+//3 states : pending, fulfilled, rejected
+
+//how do you create a promise
+//how do you change a satus of a promise
+//how do you listen for when the status of a promise changes?
+
+//create
+const promise = new Promise()
+
+//change the status
+const promise2 = new Promise((resolve, reject) => {
+    //resolve changes status to fulfilled
+    resolve()
+    //reject changes it to rejected.
+    reject()
+})
