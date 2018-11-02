@@ -4,8 +4,11 @@ module.exports = {
         this.currentUser = { name: "Test", email: this.email };
         this.accountDetails = { balance: "£44.99", user: this.currentUser }
 
-        this.getData = function () {
-            return this.accountDetails.balance
+        if (email) {
+            this.getData = function () {
+                return this.accountDetails.balance
+            }
+            return this.getData();
         }
     }
 }
